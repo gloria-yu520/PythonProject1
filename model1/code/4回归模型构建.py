@@ -32,8 +32,9 @@ print(model1_fitted.summary())
 
 # 步骤5：提取训练集和测试集的预测概率
 # 训练集预测概率
+# 本次变更测试
 train_standardized["predict_prob_train"] = model1_fitted.predict(X_train_with_const)
-
+aaa = 123
 # 测试集预测概率（先添加常数项，再预测）
 X_test = test_standardized[feature_cols]
 X_test_with_const = sm.add_constant(X_test)
